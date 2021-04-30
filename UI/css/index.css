@@ -7,8 +7,9 @@
 }
 
 *, *::before, *::after{
-    font-family: sans-serif;
+    font-family: 'Georgia';
     box-sizing: border-box;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -42,13 +43,23 @@ body{
     height: 100%;
     min-width: 123px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
 }
 .logo__text{
     text-decoration: none;
     color: #666666;
     font-size: 32px;
+}
+.logo__text::first-letter{
+    font-size: 42px;
+}
+.logo__subtext{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999999;
+    font-weight: lighter;
 }
 .nav__list{
     display: flex;
@@ -57,14 +68,15 @@ body{
 .nav__link{
     text-decoration: none;
     font-size: 13px;
+    font-weight: 100;
     color: #979797;
     display: flex;
     align-items: center;
     height: 100%;
     padding: 0 18px;
-    line-height: 16px;
     transition: .3s background ease;
     position: relative;
+    line-height: 16px;
 }
 .nav__link:hover{
     background: #a7c353;
@@ -158,6 +170,7 @@ body{
     background: #a7c353;
     color: white;
     padding: 12px;
+    font-size: 22px;
     text-align: center;
 }
 .slide__text{
@@ -247,17 +260,20 @@ body{
 .about__text{
     margin-top: 10px;
     font-weight: 100;
+    font-size: 13px;
 }
 .advantages__title{
     font-size: 22px;
     color: #666;
     font-weight: 200;
     margin: 24px 0px;
+    line-height: 26px;
 }
 .more__link{
     color: #a7c353;
     align-self: end;
     margin-top: 10px;
+    font-size: 13px;
     text-decoration: none;
 }
 .services__content{
@@ -275,14 +291,16 @@ body{
     height: 64px;
 }
 .services__title{
-    font-weight: 200;
     font-size: 14px;
     margin-left: 12px;
-    color: #666;
+    color: #878787;
+    font-weight: 300;
 }
 .services__text{
     font-weight: 100;
     margin-top: 12px;
+    font-size: 13px;
+    color: #868686;
 }
 
 .comment__block{
@@ -290,7 +308,8 @@ body{
     flex-direction: column;
 }
 .comment__name{
-    color: #666;
+    color: #989898;
+    font-size: 16px;
 }
 .comment_quote{
     font-size: 64px;
@@ -300,9 +319,13 @@ body{
 }
 .job{
     font-weight: 100;
+    font-size: 16px;
 }
 .comment__text{
     font-weight: 100;
+    font-size: 13px;
+    line-height: 18px;
+    color: #888888;
 }
 
 
